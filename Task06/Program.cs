@@ -5,11 +5,11 @@ Console.Clear();
 Console.WriteLine("Введите число: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
-if (N % 2 == 0) Console.WriteLine("Является чётным");
+if (N % 2 == 0) Console.WriteLine($"Число {N} является чётным");
 
 else 
 {
-    Console.WriteLine("Не является чётным");
+    Console.WriteLine($"Число {N} не является чётным");
 };
 
 Console.WriteLine();
