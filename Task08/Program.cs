@@ -9,10 +9,10 @@ int lastCount = (N / 2) * 2;
 if (N < 2) { Console.Write($"Чётных чисел в диапазоне от 1 до {N} нет"); }
 else
 {
-    Console.Write($"Чётные числа в диапазоне от 1 до {N} : ");
+    Console.Write($"Чётные числа в диапазоне от 1 до {N}:  ");
     for (int i = 2; i <= N - 2; i += 2)
         Console.Write($"{i}, ");
-        Console.Write(lastCount);
+        Console.WriteLine($"{lastCount}.");
 };
 
 
