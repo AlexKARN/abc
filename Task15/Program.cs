@@ -4,3 +4,9 @@
 // 6 -> да,
 // 7 -> да,
 // 1 -> нет.
+
+Console.Clear();
+Console.WriteLine("Введите цифру, обозначающую день недели (от 1 до 7):");
+int day = Convert.ToInt32(Console.Read());
+if (day == 6 || day == 7) Console.WriteLine($"День {day} является выходным.");
+else Console.WriteLine($"День {day} не является выходным.");
