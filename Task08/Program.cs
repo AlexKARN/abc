@@ -3,14 +3,14 @@
 
 Console.Clear();
 Console.WriteLine("Введите число: ");
-int N = Convert.ToInt32(Console.ReadLine());
-int lastCount = (N / 2) * 2;
+int n = Convert.ToInt32(Console.ReadLine());
+int lastCount = (n / 2) * 2;
 
-if (N < 2) { Console.Write($"Чётных чисел в диапазоне от 1 до {N} нет"); }
+if (n < 2) { Console.Write($"Чётных чисел в диапазоне от 1 до {n} нет"); }
 else
 {
-    Console.Write($"Чётные числа в диапазоне от 1 до {N}:  ");
-    for (int i = 2; i <= N - 2; i += 2)
+    Console.Write($"Чётные числа в диапазоне от 1 до {n}:  ");
+    for (int i = 2; i <= n - 2; i += 2)
         Console.Write($"{i}, ");
         Console.WriteLine($"{lastCount}.");
 };
