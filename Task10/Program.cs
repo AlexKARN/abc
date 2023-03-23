@@ -10,7 +10,7 @@ if (absnum > 99 && absnum < 1000)
         int tempnum = absnum/10;
         int secondNumber = tempnum % 10;
         Console.Clear();
-         Console.WriteLine($"Введённое число: {number}");
+        Console.WriteLine($"Введённое число: {number}");
         Console.WriteLine($"Вторая цифра введенного числа: {secondNumber}");
     }
     
