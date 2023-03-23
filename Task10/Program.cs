@@ -12,7 +12,7 @@ if (absnum > 99 && absnum < 1000)
         Console.Clear();
         Console.WriteLine($"Введённое число: {number}");
         Console.WriteLine($"Вторая цифра введенного числа: {secondNumber}");
-    }
+    
     
 else
     { 
