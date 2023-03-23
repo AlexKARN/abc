@@ -3,7 +3,7 @@
 
 Console.Clear();
 Console.WriteLine("Введите число: ");
-int N = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
 int lastCount = (n / 2) * 2;
 
 if (n < 2) { Console.Write($"Чётных чисел в диапазоне от 1 до {n} нет"); }
