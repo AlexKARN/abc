@@ -7,30 +7,29 @@ int enteredNumber = Convert.ToInt32(Console.ReadLine());
 
 if (enteredNumber < 0) enteredNumber = -enteredNumber;
 
-int decimalNum = 0; 
-int decimalDegree = DecimalDegree (enteredNumber);
-int num3 = Num3(enteredNumber, decimalDegree);
+if (enteredNumber < 100) Console.WriteLine("Во введенном числе третьей цифры нет.");
 
-Console.WriteLine($"Число цифр введенного числа:  {decimalDegree}");
-
-Console.WriteLine($"Третья цифра введенного числа:  {num3}");
-
-int DecimalDegree (int number)
+else
 {
-    while (number > 0)
-    {
-        number = number/10;
-        decimalNum++;
-    } 
-    return decimalNum;
+    int num3 = Num3(enteredNumber);
+    Console.WriteLine($"Третья цифра введенного числа:  {num3}");
 }
 
-int Num3(int number, int decimalNum)
+int Num3(int number)
 {
+
+    int tempNumber = number;
+    int decimalNum = 0; 
+    while (tempNumber > 0)
+       {
+        tempNumber = tempNumber/10;
+        decimalNum++;
+        } 
+ 
     for(int i = 1; i < decimalNum -2; i++)
-    {
+        {
         number = number/10;
-    }
+        }
     number = number % 10;
     return number;
 }
