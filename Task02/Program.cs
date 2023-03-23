@@ -13,7 +13,7 @@ Console.WriteLine($"Первое число {number1} большее, второ
 else if (number1 < number2)
 Console.WriteLine($"Второе число {number2} большее, первое число {number1} меньшее");
 
-else if (number1 == number2)
+else (number1 == number2)
 Console.WriteLine($"Ни одно из введенных числе {number2} и {number1} не является бОльшим, поскольку они равны между собой");
 
 
