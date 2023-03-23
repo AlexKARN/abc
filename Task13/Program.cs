@@ -4,11 +4,12 @@
 Console.Clear();
 Console.WriteLine("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
+char num3;
 if (number < 0) number = -number;
 string snumber = Convert.ToString(number);
 if (snumber.Length < 3) Console.WriteLine("Третьей цифры нет");
 else
     {
-        char num3 = snumber[2];
+        num3 = snumber[2];
         Console.WriteLine($"Третья цифра введенного числа: {num3}");
     }   
