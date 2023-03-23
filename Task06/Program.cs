@@ -3,13 +3,13 @@
 
 Console.Clear();
 Console.WriteLine("Введите число: ");
-int N = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
 
-if (N % 2 == 0) Console.WriteLine($"Число {N} является чётным");
+if (n % 2 == 0) Console.WriteLine($"Число {n} является чётным");
 
 else 
 {
-    Console.WriteLine($"Число {N} не является чётным");
+    Console.WriteLine($"Число {n} не является чётным");
 };
 
 Console.WriteLine();
