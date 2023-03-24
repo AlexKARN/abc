@@ -3,6 +3,9 @@
 
 Console.Clear();
 
+double[] p1 = {0,0,0};
+double[] p2 = {0,0,0};
+
 Ask3DCoordinates(p1, "A");
 Ask3DCoordinates(p2, "B");
 
@@ -18,6 +21,7 @@ void Ask3DCoordinates(double[] coordinates, string nameOfPoint)
         coordinates[i - 1] = Convert.ToDouble(Console.ReadLine());
     }
 }
+
 
 double Distance3D(double[] point1, double[] point2)
 {
