@@ -15,5 +15,4 @@ for(int i = 1; i <= num; i++)
     int qube = i*i*i;
     Console.WriteLine($"{i,3} {qube, 9}");
 }
-return;
 }
