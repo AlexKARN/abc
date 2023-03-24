@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.Clear();
+/*Console.Clear();
 Console.WriteLine("Введите трехзначное число:");
 int number = Convert.ToInt32(Console.ReadLine());
 int absnum = Math.Abs(number);
@@ -17,4 +17,9 @@ if (absnum > 99 && absnum < 1000)
 else
     { 
        Console.WriteLine("Введено ненадлежащее число.");
+    }
+    */
+    string Method(10,"f")
+    {
+        Console.Write(f);
     }
