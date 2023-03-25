@@ -3,13 +3,13 @@
 
 Console.Clear();
 
-double[] p1 = {0,0,0};
-double[] p2 = {0,0,0};
+double[] pACoordinates = {0,0,0};
+double[] pBCoordinates = {0,0,0};
 
-Ask3DCoordinates(p1, "A");
-Ask3DCoordinates(p2, "B");
+Ask3DCoordinates(pACoordinates, "A");
+Ask3DCoordinates(pBCoordinates, "B");
 
-double distance3D = Distance3D(p1, p2);
+double distance3D = Distance3D(pACoordinates, pBCoordinates);
 Console.WriteLine($"Расстояние между точками равно: {distance3D}");
 
 
