@@ -26,6 +26,7 @@ void Ask3DCoordinates(double[] coordinates, string nameOfPoint)
 double Distance3D(double[] point1, double[] point2)
 {
     double tempSquareSum = 0;
+    
     for (int i = 0; i < 3; i++)
     {
         tempSquareSum = tempSquareSum + (point1[i] - point2[i]) * (point1[i] - point2[i]);
