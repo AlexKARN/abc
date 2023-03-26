@@ -10,7 +10,7 @@ int numberLength = NumberLength(number);
 int[] numberDigits = NumberDigits(number);
 bool yesPalindrom = YesPalindrom(numberDigits);
 
-Console.WriteLine($"Количество цифр числа:  {numberLength}");
+Console.WriteLine($"Количество значащих цифр числа:  {numberLength}");
 
 Console.Write("Массив цифр числа:  ");
 
@@ -33,7 +33,7 @@ int NumberLength(int num1)                    // метод возвращает
 }
 int[] NumberDigits(int num2)     // метод возвращает массив, состоящий из цифр заданного числа
 {
-    int num2Length = NumberLength(num2);   // вызов одного метода внутри другого метода                 
+    int num2Length = NumberLength(num2);   // метод NumberLength вызывается внутри метода NumberDigits                 
 
     int[] array = new int[num2Length];
     for (int i = 0; i < num2Length; i++)
