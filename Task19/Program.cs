@@ -7,7 +7,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 if (number < 0) number = -number;
 
 int numberLength = NumberLength(number);
-int[] numberDigits = NumberDigits(number, numberLength);
+int[] numberDigits = NumberDigits(number);
 bool yesPalindrom = YesPalindrom(numberDigits);
 
 Console.WriteLine($"Количество цифр числа:  {numberLength}");
@@ -31,8 +31,10 @@ int NumberLength(int num1)                    // метод возвращает
     }
     return count;
 }
-int[] NumberDigits(int num2, int num2Length)     // метод возвращает массив, состоящий из цифр заданного числа
+int[] NumberDigits(int num2)     // метод возвращает массив, состоящий из цифр заданного числа
 {
+    int num2Length = NumberLength(num2);   // вызов одного метода внутри другого метода                 
+
     int[] array = new int[num2Length];
     for (int i = 0; i < num2Length; i++)
     {
@@ -63,4 +65,5 @@ void PrintArray(int[] array)                 // метод выводит на �
         Console.Write(array[i] + " ");
     }
 }
+
 
