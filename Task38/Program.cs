@@ -11,20 +11,6 @@ if (arraySize <= 0)
     return;
 }
 
-
-Console.Write("Введите нижную границу диапазона случайных чисел (вещественное число): ");
-double minRandom = Convert.ToDouble(Console.ReadLine());
-
-Console.Write("Введите верхнюю границу диапазона случайных чисел (вещественное число): ");
-double maxRandom = Convert.ToDouble(Console.ReadLine());
-
-if (maxRandom <= minRandom + 0.2)
-{
-    Console.WriteLine("Введены некорректные границы диапазона случайных чисел!");
-    return;
-}
-
-
 double[] arr = CreateArray(arraySize);     // вызов метода создания массива
 
 PrintArray(arr);                        // вызов метода печати массива
@@ -39,7 +25,7 @@ double[] CreateArray(int arrayLength)     // задание метода соз�
     
     for(int i = 0; i < arrayLength; i++)
     {
-        newArray[i] = Math.Round(new Random().NextDouble(), 3);
+        newArray[i] = 100*Math.Round(new Random().NextDouble(), 3);
     }
     return newArray;
 } 
@@ -63,5 +49,6 @@ double DiffMaxMin(double[] arr1)                // задание метода �
         if (arr1[i] > max) max = arr1[i];
         else if (arr1[i] < min) min = arr1[i];
     }
-    return (max - min);
+    diff = max - min;
+    return diff;
 }
