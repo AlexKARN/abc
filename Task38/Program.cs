@@ -47,7 +47,8 @@ void PrintArray(double[] array)           // задание метода выв�
 
 double DiffMaxMin(double max, double min)                // задание метода вычисления разности двух вещественных чисел 
 {
-    return max - min;   
+    double diff = Math.Round((max - min),1);
+    return diff;   
 }
 
 double MaxElement(double[] arr1)          // задание метода определения максимального элемента массива
@@ -57,7 +58,7 @@ double MaxElement(double[] arr1)          // задание метода опр�
     {
         if (arr1[i] > max) max = arr1[i];
     }
-    return max;
+    return Math.Round(max,1);
 }
 
 double MinElement(double[] arr2)          // задание метода определения минимального элемента массива
@@ -67,5 +68,5 @@ double MinElement(double[] arr2)          // задание метода опр�
     {
         if (arr2[i] < min) min = arr2[i];
     }
-    return min;
+    return Math.Round(min,1);
 }
