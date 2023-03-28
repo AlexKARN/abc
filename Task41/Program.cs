@@ -42,7 +42,7 @@ void PrintArray(int[] array)           // задание метода вывод
     Console.WriteLine();
 }
 
-int NumbersBiggerThanZero(int[] arr)
+int NumbersBiggerThanZero(int[] arr)   // задание метода подсчёта количества чисел больше нуля
 {   int result = 0;
     for (int i = 0; i < arr.Length; i++)
     {
