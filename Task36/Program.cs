@@ -7,7 +7,14 @@ int arraySize = Convert.ToInt32(Console.ReadLine());
 
 if (arraySize <= 0)
 {
-    Console.WriteLine("Введено некорректное значение размера массива!");
+    Console.WriteLine("Введено непреемлемое значение размера массива!");
+    Console.WriteLine("Массив должен содержать хотя бы один нечетный элемент!");
+    return;
+}
+
+if (arraySize = 1)
+{
+    Console.WriteLine("Массив должен содержать хотя бы один нечетный элемент!");
     return;
 }
 
