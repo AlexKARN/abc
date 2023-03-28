@@ -12,7 +12,7 @@ if (arraySize <= 0)
     return;
 }
 
-if (arraySize = 1)
+if (arraySize == 1)
 {
     Console.WriteLine("Массив должен содержать хотя бы один нечетный элемент!");
     return;
