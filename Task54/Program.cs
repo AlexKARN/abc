@@ -24,6 +24,7 @@ if (columns < 1)
 
 int[,] array = Create2DMatrixRndInt(rows,columns, 0,30);
 
+Console.WriteLine("Исходный массив:");
 Print2DArray(array);
 
 ArrangedArray(array);
