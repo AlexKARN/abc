@@ -51,7 +51,7 @@ void Print2DArray(int[,] matr)
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
-        Console.Write($"[индекс строки: {i}]  ");
+        Console.Write($"[индекс строки: {i,3} ]");
         for (int j = 0; j < matr.GetLength(1); j++)
         {
             Console.Write($"{matr[i,j], 4}");
