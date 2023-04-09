@@ -1,14 +1,22 @@
-﻿// Задача 64: 
+﻿// Задача 64: Задайте значение N. Напишите программу, которая выведет
+// все натуральные числа в промежутке от N до 1.Выполнить с помощью рекурсии.
 
-int n = 2;
-int m = 10;
+Console.Clear();
+Console.WriteLine("Введите натуральное число:");
+int n = Convert.ToInt32(Console.ReadLine());
 
-int PowerOfNumber(int num1, int num2)
+if (n < 1 )
 {
-    if (num2 ==00) return 1;
-    else return (num1*PowerOfNumber(num1, num2-1));
+    Console.WriteLine("Введено неприемлемое число!");
+    return;
 }
 
-int p = PowerOfNumber(n,m);
-Console.WriteLine($"основание степени:{n}, показатель степени {m}, {p}");
+NaturalNumbers(n);
 
+void NaturalNumbers(int num)
+{
+    if (num == 0)
+    return;
+Console.Write($"{num, 3}");
+NaturalNumbers(num-1);
+}
