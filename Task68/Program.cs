@@ -30,6 +30,6 @@ int Ackermann(int m1, int m2)  // метод вычисления функции
     return (m2 + 1);
     else if (m1 > 0 && m2 == 0)
     return Ackermann(m1 - 1, 1);
-    else if
+    else
     return Ackermann(m1 - 1, Ackermann( m1, m2 - 1));
 }
